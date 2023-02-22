@@ -17,7 +17,11 @@ body {
   background-size: cover;
   background-position: center;
 }
-
+.greet {
+  background: url('img/we.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .dot {
   width: 35px;
   height: 35px;
@@ -175,10 +179,11 @@ body {
 
 .link {
   position: absolute;
-  top: 75%;
-  left: 35%;
+  top: 90%;
+  left: 5%;
   font-size: 50px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* button */
