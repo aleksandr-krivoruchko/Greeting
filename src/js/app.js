@@ -1,16 +1,16 @@
 /* https://greensock.com/gsap */
-TweenLite.set("#petals", { perspective: 600 });
-TweenLite.set("img", { xPercent: "-50%", yPercent: "-50%" });
+TweenLite.set('#petals', { perspective: 600 });
+TweenLite.set('img', { xPercent: '-50%', yPercent: '-50%' });
 
 var total = 50;
-var warp = document.getElementById("petals"),
+var warp = document.getElementById('petals'),
   w = window.innerWidth,
   h = window.innerHeight;
 
 for (i = 0; i < total; i++) {
-  var Div = document.createElement("div");
+  var Div = document.createElement('div');
   TweenLite.set(Div, {
-    attr: { class: "dot" },
+    attr: { class: 'dot' },
     x: R(0, w),
     y: R(-200, -150),
     z: R(-200, 200),
@@ -27,7 +27,7 @@ function animm(elm) {
     delay: -15,
   });
   TweenMax.to(elm, R(4, 8), {
-    x: "+=100",
+    x: '+=100',
     rotationZ: R(0, 180),
     repeat: -1,
     yoyo: true,
@@ -48,9 +48,9 @@ function R(min, max) {
 }
 
 /* https://mattboldt.com/typed.js/ */
-var typed = new Typed("#text", {
+var typed = new Typed('#text', {
   strings: [
-    "Желаю весеннего настроения, пусть на душе всегда будет светло и радостно. Желаю, чтобы на лице всегда сияла улыбка, пусть жизнь будет щедра на подарки. В самый женский день года желаю простого женского счастья и здоровья.",
+    'Желаю весеннего настроения, пусть на душе всегда будет светло и радостно. Желаю, чтобы на лице всегда сияла улыбка, пусть жизнь будет щедра на подарки. В самый женский день года желаю простого женского счастья и здоровья.',
   ],
   startDelay: 3000,
   typeSpeed: 50,
@@ -59,8 +59,7 @@ var typed = new Typed("#text", {
   loop: false,
   showCursor: false,
   onComplete: function () {
-    var author = document.getElementById("author");
+    var author = document.getElementById('author');
     author.style.opacity = 1;
   },
 });
-
