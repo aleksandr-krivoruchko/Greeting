@@ -2,7 +2,7 @@
 TweenLite.set('#petals', { perspective: 600 });
 TweenLite.set('img', { xPercent: '-50%', yPercent: '-50%' });
 
-var total = 50;
+var total = 300;
 var warp = document.getElementById('petals'),
   w = window.innerWidth,
   h = window.innerHeight;
@@ -33,7 +33,23 @@ function animm(elm) {
     yoyo: true,
     ease: Sine.easeInOut,
   });
+  TweenMax.to(elm, R(5, 11), {
+    x: '+=100',
+    rotationZ: R(0, 180),
+    repeat: -1,
+    yoyo: true,
+    ease: Sine.easeInOut,
+  });
+
   TweenMax.to(elm, R(2, 8), {
+    rotationX: R(0, 360),
+    rotationY: R(0, 360),
+    repeat: -1,
+    yoyo: true,
+    ease: Sine.easeInOut,
+    delay: -5,
+  });
+  TweenMax.to(elm, R(3, 10), {
     rotationX: R(0, 360),
     rotationY: R(0, 360),
     repeat: -1,
@@ -50,7 +66,7 @@ function R(min, max) {
 /* https://mattboldt.com/typed.js/ */
 var typed = new Typed('#text', {
   strings: [
-    'Желаю весеннего настроения, пусть на душе всегда будет светло и радостно. Желаю, чтобы на лице всегда сияла улыбка, пусть жизнь будет щедра на подарки. В самый женский день года желаю простого женского счастья и здоровья.',
+    "Бажаю весняного настрою, нехай на душі завжди буде світло та радісно. Бажаю, щоб на обличчі завжди сяяла посмішка, хай життя буде щедрим на подарунки. У самий жіночий день року бажаю простого жіночого щастя та здоров'я.",
   ],
   startDelay: 3000,
   typeSpeed: 50,
@@ -63,3 +79,9 @@ var typed = new Typed('#text', {
     author.style.opacity = 1;
   },
 });
+
+const woof = document.querySelector('.woof');
+
+setTimeout(() => {
+  woof.play();
+}, 21000);
