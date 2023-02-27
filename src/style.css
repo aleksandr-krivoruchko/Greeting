@@ -2,11 +2,20 @@ html,
 body {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* .wrapper {
+.wrapper {
   position: relative;
-  padding: 20px;
-} */
+  width: 350px;
+  height: 780px;
+  border: 1px solid red;
+  background: url('img/baba_s_frazoi.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -18,9 +27,10 @@ body {
   overflow: hidden;
   perspective: 1000px;
   font-family: 'Caveat', cursive;
-  background: url('img/baba_s_frazoi.jpg') no-repeat;
+  background-color: #8047ca;
+  /* background: url('img/baba_s_frazoi.jpg') no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
 .greet {
   background: url('img/we.jpg') no-repeat;
