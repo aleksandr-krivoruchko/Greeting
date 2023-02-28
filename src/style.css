@@ -29,7 +29,7 @@ body {
   background-color: #8047ca;
   background: url('img/baba_s_frazoi.jpg') no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: top;
 }
 .greet {
   background: url('img/we.jpg') no-repeat;
@@ -118,7 +118,7 @@ body {
     transform: rotate(0deg);
   }
   to {
-    top: 50px;
+    top: 10px;
     transform: rotate(360deg);
   }
 }
@@ -138,7 +138,7 @@ body {
   width: 80px;
   height: 87px;
   position: absolute;
-  top: 41%;
+  top: 33%;
   left: 47%;
   opacity: 0;
   animation: face 3s ease-in-out 8s forwards;
@@ -157,7 +157,7 @@ body {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 75%;
+  top: 67%;
   right: -10%;
   opacity: 0;
   animation: heart 4s ease-in-out 5s forwards;
@@ -185,7 +185,7 @@ body {
   display: none;
   position: absolute;
   top: 120%;
-  left: 25%;
+  left: 31%;
   animation: me 5s linear 12s forwards;
 }
 @keyframes me {
@@ -193,7 +193,7 @@ body {
     top: 120%;
   }
   to {
-    top: 76%;
+    top: 65%;
   }
 }
 
@@ -201,8 +201,8 @@ body {
   display: none;
   width: 200px;
   position: absolute;
-  top: 56%;
-  left: 46%;
+  top: 45%;
+  left: 50%;
   background-color: transparent;
   animation: heart 2s linear 22s forwards;
   opacity: 0;
@@ -212,8 +212,8 @@ body {
   display: none;
   width: 60px;
   position: absolute;
-  top: 64%;
-  left: 65%;
+  top: 54%;
+  left: 70%;
   animation: heart 2s linear 18s forwards;
   opacity: 0;
 }
@@ -251,8 +251,8 @@ body {
 /* button */
 .cta {
   position: relative;
-  top: 52%;
-  left: 27%;
+  top: 42%;
+  left: 28%;
   margin: auto;
   padding: 19px 22px;
   transition: all 0.2s ease;
