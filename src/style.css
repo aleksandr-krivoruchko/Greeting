@@ -12,7 +12,6 @@ body {
   overflow: hidden;
 }
 .wrapper {
-  border: 1px solid red;
   position: relative;
   width: 380px;
   height: 700px;
@@ -227,7 +226,6 @@ img {
   position: absolute;
   top: 30%;
   left: 30%;
-
   cursor: pointer;
 }
 
@@ -237,6 +235,7 @@ img {
 
 .link {
   position: absolute;
+  z-index: 5;
   bottom: 10%;
   left: 5%;
   font-size: 50px;
