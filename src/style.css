@@ -5,11 +5,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  perspective: 1000px;
+  font-family: 'Caveat', cursive;
+  background-color: #c4c2c7;
+  overflow: hidden;
 }
 .wrapper {
+  border: 1px solid red;
   position: relative;
-  width: 385px;
-  height: 800px;
+  width: 380px;
+  height: 700px;
   background: url('img/baba_s_frazoi.jpg') no-repeat;
   background-size: contain;
   background-position: center;
@@ -20,17 +26,7 @@ img {
   height: auto;
   margin: 0;
 }
-body {
-  padding: 30px 0;
-  margin: 0;
-  /* overflow: hidden; */
-  perspective: 1000px;
-  font-family: 'Caveat', cursive;
-  background-color: #c4c2c7;
-  /* background: url('img/baba_s_frazoi.jpg') no-repeat;
-  background-size: contain;
-  background-position: center; */
-}
+
 .greet {
   background: url('img/we.jpg') no-repeat;
   background-size: cover;
@@ -118,7 +114,7 @@ body {
     transform: rotate(0deg);
   }
   to {
-    top: 50px;
+    top: 10px;
     transform: rotate(360deg);
   }
 }
@@ -157,7 +153,7 @@ body {
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 82%;
+  top: 85%;
   right: -10%;
   opacity: 0;
   animation: heart 4s ease-in-out 5s forwards;
@@ -184,13 +180,13 @@ body {
 .me {
   display: none;
   position: absolute;
-  top: 120%;
+  top: 130%;
   left: 25%;
   animation: me 5s linear 12s forwards;
 }
 @keyframes me {
   from {
-    top: 120%;
+    top: 130%;
   }
   to {
     top: 85%;
@@ -201,7 +197,7 @@ body {
   display: none;
   width: 200px;
   position: absolute;
-  top: 63%;
+  top: 60%;
   left: 50%;
   background-color: transparent;
   animation: heart 2s linear 22s forwards;
@@ -212,7 +208,7 @@ body {
   display: none;
   width: 60px;
   position: absolute;
-  top: 72%;
+  top: 70%;
   left: 65%;
   animation: heart 2s linear 18s forwards;
   opacity: 0;
